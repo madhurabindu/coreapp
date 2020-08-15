@@ -37,6 +37,11 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@2008f912f56e61277eefaac6d1888b750582aa16
 
+    # Restore packages
+    - name: Restore packages
+      shell: cmd
+      run: dotnet restore
+      
     #MSBUild the app
     - name: Build the App
       shell: cmd
