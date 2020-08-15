@@ -48,4 +48,5 @@ jobs:
       run: call build.bat
     # Execute all unit tests in the solution
     - name: Run App
-      run: dotnet run CoreApp.dll
+      shell: cmd
+      run: call run.bat
