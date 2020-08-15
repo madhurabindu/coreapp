@@ -40,7 +40,7 @@ jobs:
     #MSBUild the app
     - name: Build the App
       shell: cmd
-      run: call .\Build.cmd
+      run: call Build.cmd
     # Execute all unit tests in the solution
     - name: Run App
       run: dotnet run CoreApp.dll
