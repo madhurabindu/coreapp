@@ -27,6 +27,12 @@ jobs:
       with:
         fetch-depth: 0
 
+
+    # Check LOC
+    - name: Number of lines in file
+      shell: cmd
+      run: pip install pygount
+      
     # Install the .NET Core workload
     - name: Install .NET Core
       uses: actions/setup-dotnet@v1
@@ -45,5 +51,5 @@ jobs:
     # Check LOC
     - name: Number of lines in file
       shell: cmd
-      run: call loc.bat
+      run: pip install pygount
    
