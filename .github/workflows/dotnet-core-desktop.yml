@@ -29,9 +29,13 @@ jobs:
 
 
     # Check LOC
-    - name: Number of lines in file
+    - name: Install Pygount
       shell: cmd
       run: pip install pygount
+
+    - name: Run LOC Counter
+      shell: cmd
+      run: pygount --suffix=cs
       
     # Install the .NET Core workload
     - name: Install .NET Core
